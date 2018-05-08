@@ -1,0 +1,74 @@
+* { padding: 0; margin: 0; text-decoration: none;}
+#musicBtn { width: 8.4%; height: auto; position: fixed; right: 3%; top: 3%; z-index: 10;}
+.a_musicBtn { -webkit-animation:musicBtn 1s linear infinite;}
+#container { position: absolute; z-index: 0; margin: 0 auto; overflow: hidden;}
+.page {position: absolute; z-index: 1; background: url(../img/bg.jpg); background-size: 100% 100%;}
+.hide { display: none;}
+
+
+/*page1*/
+.banner { width: 86.3%; height: auto; position: absolute; left: 4%; top: 3.5%; z-index: 2; opacity: 1;}
+.i11 { width: 20.8%; height: auto; position: absolute; left: 1%; top: 1.5%; z-index: 3; opacity: 1;}
+.i12 { width: 10.9%; height: auto; position: absolute; right: 1.8%; top: 3%; z-index: 3; opacity: 1;}
+.i13 { width: 5.3%; height: auto; position: absolute; right: 0; top: 39.5%; z-index: 3; opacity: 1;}
+.i14 { width: 85.8%; height: auto; position: absolute; left: 7.1%; top: 24%; z-index: 2; opacity: 1;}
+.i15 { width: 62.3%; height: auto; position: absolute; left: 18.85%; bottom: 9.5%; z-index: 2; opacity: 1;}
+.btn01 { width: 17.1%; height: auto; position: absolute; left: 17.5%; bottom: 2%; z-index: 2; opacity: 1;}
+.btn02 { width: 17.1%; height: auto; position: absolute; left: 40.7%; bottom: 2%; z-index: 2; opacity: 1;}
+.btn03 { width: 17.1%; height: auto; position: absolute; left: 64%; bottom: 2%; z-index: 2; opacity: 1;}
+.con { position: absolute; left: 8.7%; top: 31.6%; z-index: 3;}
+.con .chuan03 { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 2;}
+.con02 { top: 60%;}
+.con03 { left: 51.3%;}
+.con04 { left: 51.3%; top: 60%;}
+
+.conIn { width: 83%; height: 90%; position: absolute; bottom: 0; left: 8.5%; z-index: 1; overflow: hidden; background: url(../img/chuan04.jpg) no-repeat; background-size: 100% 100%;}
+.chuan_left { width: 50%; height: 100%; position: absolute; left: 0; top: 0;}
+.chuan_right { width: 50%; height: 100%; position: absolute; right: 0; top: 0;}
+.di { width: 100%; height: auto; position: absolute; left: 0; bottom: 0%; z-index:2;}
+
+.conIn_cur .a_chuan_left {
+	-webkit-animation:a_chuan_left 0.3s linear forwards;
+	-webkit-animation-delay:0s;
+}
+.conIn_cur .a_chuan_right {
+	-webkit-animation:a_chuan_right 0.3s linear forwards;
+	-webkit-animation-delay:0s;
+}
+
+@-webkit-keyframes a_chuan_left{
+	0%{-webkit-transform: perspective(0) rotateY(0) translateX(0) translateY(0) scale(1);}
+	30%{-webkit-transform: perspective(80%) rotateY(0) translateX(-20%) translateY(-5%) scale(1);}
+	100%{-webkit-transform: perspective(80px) rotateY(45deg) translateX(-50%) translateY(-10%) scale(0.9);}
+}
+@-webkit-keyframes a_chuan_right{
+	0%{-webkit-transform: perspective(0) rotateY(0) translateX(0) translateY(0) scale(1);}
+	30%{-webkit-transform: perspective(80px) rotateY(0) translateX(20%) translateY(-5%) scale(1);}
+	100%{-webkit-transform: perspective(80px) rotateY(-45deg) translateX(50%) translateY(-10%) scale(0.9);}
+}
+
+
+
+
+/*弹窗*/
+.tc { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10; background: rgba(0,0,0,0.6); display: none;}
+.tcIn { width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;}
+.tcBg { width: 75%; height: auto; position: absolute; left: 12.5%; top: 20%; z-index: 2;}
+.tc_con { width: 100%; height: auto; background:url(../img/tc_bg.png); background-repeat: repeat-y; background-size:100%; text-align: center; font-size: 1.8rem; line-height: 2.3rem; color: #861e1e; padding: 1rem 0 1rem 0; font-weight: bold;}
+.i28In { width: 100%; height: auto; display: block;}
+.tc_btnIn { width: 68%; height: auto; display: block; margin: 1.5rem 0 1rem 16%;}
+.yun { width: 12.3%; height: auto; position: absolute; right: 8%; bottom: 7%; z-index: 1;}
+.close { width: 11.5%; height: auto; position: absolute; left: 44.25%; top: 70%; z-index: 2;}
+.tc02 { top: 5%;}
+.guize { width: 86%; margin: 0 0 0 7%; height: 22rem; overflow-x: hidden;}
+.guize_total { text-align: center; padding: 0 0 1rem 0;}
+.guize_nr { text-align: left; font-size: 1.3rem; line-height: 1.5rem; color: #7b5319;}
+.tc_tishi { font-size: 1.2rem; line-height: 2rem; color: #ff6969;}
+.tc_tishi08 { width: 84%; margin: 0 0 0 8%; font-size: 1.2rem; line-height: 1.5rem; color: #ff6969;}
+
+
+.tc ,.tc_08 { display: none;}
+
+
+
+
